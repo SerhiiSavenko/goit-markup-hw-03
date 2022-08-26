@@ -4,13 +4,14 @@
     --secondary-font: "Raleway", sans-serif;
 
 
-   /*Text colors*/
+   /* Text colors */
     --main-txt-cl: #212121;
     --light-txt-cl: #FFFFFF;
     
     /*Background colors*/
     --basic-blue: #2196F3;
     --contacts-cl:  #757575;
+    --secondary-cl: #2F303A;
     /*Others*/
 }
 
@@ -28,6 +29,16 @@
 .list {
     list-style: none;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    outline: 2px solid red;
+}
+
 
 /*header*/
 
@@ -60,9 +71,11 @@ color: var(--basic-blue);
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
-.header-logo-text, 
+.header-logo-text {
+    color: #000000;
+}
 .footer-logo-text {
-    color: var(--main-txt-cl);
+    color: var(--light-txt-cl);
 }
 
 
@@ -75,7 +88,9 @@ color: var(--basic-blue);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-txt-cl);
-    background-color:  #2F303A;
+}
+.main {
+    background-color: var(--secondary-cl);
 }
 .button {
     font-family: inherit;
@@ -135,7 +150,6 @@ color: var(--basic-blue);
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    background-color: #2F303A;
 }
 .footer-address {
     font-style: normal;
@@ -144,6 +158,9 @@ color: var(--basic-blue);
 
 .footer-address-item {
     color: var(--light-txt-cl);
+}
+.footer {
+    background-color: var(--secondary-cl);
 }
 
 /*Portfolio*/
